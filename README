@@ -1,0 +1,50 @@
+README
+File that contains a list of files I submitted.
+
+Makefile
+A makefile that allows the user to update all files related to the source code when it's complied. Also allows for user to clear all files related to the source code.
+
+encode.c
+File containing source code for a program that will encode a file using Huffman encoding.
+
+decode.c
+File containing source code for a program that will decode a file that has already been encoded using the Huffman encoding.
+
+bv.h
+A header file that informs the user what they can do while using the bv.c file.
+
+bv.c
+File containing source code for a program that contains various functions to deal with bit vectors.
+
+code.h
+A header file that contains several inline function on a stack like structure using bits.
+
+huffman.h
+A header file that informs the user what they can do while using the huffman.c file.
+
+huffman.c
+File containing source code for a program that contains various functions to deal with huffman trees.
+
+stack.h
+A header file that informs the user what they can do while using the stack.c file.
+
+stack.c
+File containing source code for a program that contains various functions to deal with stacks.
+
+queue.h
+A header file that informs the user what they can do while using the queue.c file.
+
+queue.c
+File containing source code for a program that contains various functions to deal with priority queues.
+
+To create an excutable file of the encode and decode programs, one should use the compile line:
+$ make
+After using the compile line, one needs to enter the desired executable in the command line along with an input file like so:
+$ encode -i [input file]
+OR
+$ decode -i [input file]
+Optionally, the user can write certain flags to run the programs in a specific way. All possible flags are shown in the following:
+$ banhammer -o [output file] -v
+Each flag has its own property:
+-o: informs the program which file it should output to(file must not already be in the directory)
+-v: display the statistics of the program
