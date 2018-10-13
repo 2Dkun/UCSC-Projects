@@ -10,9 +10,9 @@ typedef treeNode *item;
 
 typedef struct stack
 {
-	uint32_t size; // Holds size
-	uint32_t top; // Keeps track of the top of the stack
-	item *entries; // Array to hold items
+    uint32_t size; // Holds size
+    uint32_t top; // Keeps track of the top of the stack
+    item *entries; // Array to hold items
 } stack;
 
 stack *newStack(); // Creates a new stack

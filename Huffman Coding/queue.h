@@ -10,9 +10,9 @@ typedef treeNode *item; // treeNode defined in huffman.h
 
 typedef struct queue
 {
-	uint32_t size; // Size of queue
-	uint32_t head, tail; // Front and rear locations
-	item *Q; // Array to hold items
+    uint32_t size; // Size of queue
+    uint32_t head, tail; // Front and rear locations
+    item *Q; // Array to hold items
 } queue;
 
 queue *newQueue(uint32_t size); // Creates a new queue

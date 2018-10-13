@@ -8,9 +8,9 @@
 # include "code.h"
 
 typedef struct bitV {
-	uint8_t *vector;
-	int32_t position;
-	uint32_t length;
+    uint8_t *vector;
+    int32_t position;
+    uint32_t length;
 } bitV;
 
 // Create a new bit vector

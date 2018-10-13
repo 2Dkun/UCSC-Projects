@@ -14,10 +14,10 @@ typedef struct DAH treeNode;
 
 struct DAH
 {
-	uint8_t symbol;
-	uint64_t count;
-	bool leaf;
-	treeNode *left, *right;
+    uint8_t symbol;
+    uint64_t count;
+    bool leaf;
+    treeNode *left, *right;
 };
 
 // New node, with symbols, leaf or not, a count associated with it
@@ -41,14 +41,14 @@ void *delTree(treeNode *t);
 // Delete a node
 static inline void delNode(treeNode *h)
 {
-	free(h);
-	return;
+    free(h);
+    return;
 }
 
 // Compares the count of each tree
 static inline int8_t compare(treeNode *l, treeNode *r)
 {
-	return l->count - r->count; // l < r if negative, l = r if 0, l > r if positive
+    return l->count - r->count; // l < r if negative, l = r if 0, l > r if positive
 }
 
 // Joins two treeNodes
